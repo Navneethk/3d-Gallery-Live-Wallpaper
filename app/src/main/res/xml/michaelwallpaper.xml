@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wallpaper
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:thumbnail="@drawable/logo"
+	android:description="@string/First_description"
+	android:settingsActivity="com.drunk3nm.gallery.Michael_Setting_Activity"
+	/>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/singleLinear"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:divider="@layout/one"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:dividerPadding="12dip"-->
+<!--        android:orientation="vertical"-->
+<!--        android:showDividers="middle">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSelectSingleText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingLeft="5dp"-->
+<!--            android:text="Single Image Selector"-->
+<!--            android:textColor="#F44336"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="1px"-->
+<!--            android:background="@android:color/white" />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/single"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:drawable/list_selector_background"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:padding="5dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivAll"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginRight="10px"-->
+<!--                android:src="@drawable/backa">-->
+
+<!--            </ImageView>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="31dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/grid_item_label"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="3px"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="15px"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/grid_item_label_static"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="3px"-->
+<!--                    android:text="Selected Image"-->
+<!--                    android:textSize="11dp" />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:divider="@layout/one"
+     android:paddingTop="5dp"
+     android:layout_marginBottom="10dp"
+    android:dividerPadding="12dip"
+    android:showDividers="middle"
+    
+    >
+
+     <TextView
+         android:id="@+id/tvSelectSingleText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Background Image Selector"
+         android:paddingLeft="5dp"
+         android:textColor="#F44336"
+         android:textSize="16sp" />
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/white"/>
+
+     <LinearLayout
+         android:id="@+id/singleBg"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@android:drawable/list_selector_background"
+         android:clickable="true"
+         android:focusable="true"
+         android:padding="5dp">
+
+         <ImageView
+             android:id="@+id/ivBackground"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_marginRight="10px"
+             android:src="@mipmap/ic_launcher_foreground">
+
+         </ImageView>
+
+         <LinearLayout
+             android:layout_width="100dp"
+             android:layout_height="31dp"
+             android:orientation="vertical"
+             android:padding="0dp">
+
+             <TextView
+                 android:id="@+id/grid_item_label"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3px"
+                 android:text=""
+                 android:textSize="15px"></TextView>
+
+             <TextView
+                 android:id="@+id/grid_item_label_static"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3px"
+                 android:text="Selected Image"
+                 android:textSize="11dp" />
+
+         </LinearLayout>
+
+
+     </LinearLayout>
+ </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5px"
+     >
+
+    <TextView
+        android:id="@+id/tvMultiImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiple Image Selector"
+        android:paddingLeft="5dp"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/white"/>
+<GridView 
+        android:id="@+id/gridView1"
+        android:numColumns="2"
+        android:gravity="center"
+        android:columnWidth="170dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+ 
+</GridView>
+</LinearLayout>
+
+</LinearLayout>

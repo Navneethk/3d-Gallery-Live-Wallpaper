@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/black"
+    >
+     
+    <TextView 
+        android:id="@+id/tvDescriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A HD 3D Gallery Live Wallpaper APP within a 3D Cube.\n\n
+        You can change images with your own photos of loved ones.\n
+You can even increase/decrease the speed of rotating cube.\n\n
+You can set the position of the cube anywhere in the screen.\n\n
+You can even change direction of cube rotation angle.(vertical, horizontal as well as random)\n\n
+
+It's performance is heavily optimized as it is created using textures in OpenGLES with good memory handling. 
+Won't slow your phone down at all."
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        />
+    <Button 
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start 3D Gallery Live Wallapaper"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:orderingFromXml="true">
+
+     
+	<PreferenceScreen 
+	    android:title="Change Cube Images"
+	    android:summary="Change images of cubes manually"
+	    >
+	    <intent
+	        android:targetPackage="com.drunk3nm.gallery"
+	        android:targetClass="com.drunk3nm.gallery.ChangeCubeImages"
+	        />
+	</PreferenceScreen>
+		<PreferenceScreen 
+	    android:title="Rotation Speed"
+	    android:summary="Change Rotation speed for cube">
+	    <intent
+	        android:targetPackage="com.drunk3nm.gallery"
+	        android:targetClass="com.drunk3nm.gallery.SpeedRotation"
+	        />
+	</PreferenceScreen>
+	 <CheckBoxPreference android:title="Touch Rotate"
+                      android:defaultValue="true"
+                      android:summary="This option if selected will allow the cube to rotate when touched."
+                      android:key="gpref_touch_cube" />
+	  <CheckBoxPreference android:title="Show Cube"
+                      android:defaultValue="true"
+                      android:summary="Disable Cube"
+                      android:key="pref_disable_cube" />
+        <ListPreference android:entries="@array/Cube_Size_Entries" 
+            android:title="Cube Size" 
+            android:key="gpref_cube_size" 
+            android:entryValues="@array/Cube_Size_values" 
+            android:summary="Size of the Cube" 
+            android:defaultValue="4"
+             />
+        <ListPreference android:entries="@array/Rotation_Direction_Entries" 
+            android:title="Rotation Direction" 
+            android:key="gpref_rotation_direction" 
+            android:entryValues="@array/Rotation_Direction_Values" 
+            android:summary="Direction of Cube Rotation" 
+             />
+         <ListPreference android:entries="@array/Cube_Position_Entries" 
+            android:title="Cube Position" 
+            android:key="gpref_position_cube" 
+            android:entryValues="@array/Cube_Position_Values" 
+            android:summary="Position of Cube Rotation" 
+             />
+         <PreferenceScreen 
+	    android:title="Rate This App"
+	    android:summary="Rate this 3D Gallery Live Wallpaper"
+	    >
+	    <intent
+	        android:targetPackage="com.drunk3nm.gallery"
+	        android:targetClass="com.drunk3nm.gallery.RateThisApp"
+	        />
+	</PreferenceScreen>
+          <PreferenceScreen 
+	    android:title="Share 3D Gallery Live Wallpaper"
+	    android:summary="Share 3D Gallery Live Wallpaper with others"
+	    >
+	    <intent
+	        android:targetPackage="com.drunk3nm.gallery"
+	        android:targetClass="com.drunk3nm.gallery.ShareWallpaper"
+	        />
+	</PreferenceScreen>
+
+</PreferenceScreen>
